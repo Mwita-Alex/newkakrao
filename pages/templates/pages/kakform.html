@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Kakrao Online Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg">
+          
+          </div>
+          <div class="col-lg">
+         <h2>Kakrao Online Registration Form</h2>
+          </div>
+          <div class="col-lg">
+      
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid">
+       
+   
+    <!--REGISTRATION FORM ENDS-->
+    <!--FORM 2-->
+    <form action="{% url 'kakform' %}" method="POST" enctype="multipart/form-data">
+           {% csrf_token %}
+           <div class="form-row">
+            <!--NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">First Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="first_name" class="form-control" id="inputEmail4" placeholder="Enter first name"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+              <!--NAME INPUT-->
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Middle Name</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                <input type="text" name="middle_name" class="form-control" id="inputEmail4" placeholder="Enter Middle name"  required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+                  <!--NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Last Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="last_name" class="form-control" id="inputEmail4" placeholder="Enter last name"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->  
+        </div>
+        <!--END OF FIRST ROW-->
+
+        <div class="form-row">
+            <!--NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sex</label>
+            <select class="form-control temp-custom-select"  id="inputEmail4" name="student_gender"   required>
+              <option value="" selected disabled=""> Gender</option>
+              <option value="Female"> Female</option>
+              <option value="Male"> Male</option>
+            </select>
+            <!--div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="student_gender" class="form-control" id="inputEmail4" placeholder=""  required-->
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          </div>
+          <div class="form-row">
+              <!--NAME INPUT-->
+              <div class="form-group col-md-2">
+                <label for="inputEmail4">Address</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">ADDR</div>
+                    </div>
+                <input type="text" name="student_address" class="form-control" id="inputEmail4" placeholder="Address"  required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+                  <!--NAME INPUT-->
+          <div class="form-group col-md-2">
+            <label for="inputEmail4">Code</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">CODE</div>
+                </div>
+            <input type="text" name="code" class="form-control" id="inputEmail4" placeholder="Code"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->  
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Town</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">TWN</div>
+                </div>
+            <input type="text" name="town" class="form-control" id="inputEmail4" placeholder="Town"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Tel</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">TEL</div>
+                </div>
+            <input type="text" name="tel" class="form-control" id="inputEmail4" placeholder="Tel"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          
+
+        </div>
+        <!--END OF SECOND ROW-->
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">ID NO.</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">ID</div>
+                    </div>
+                <input type="text" name="idnumber" class="form-control" id="inputEmail4" placeholder="ID NUMBER"  required>
+              </div>
+              </div> <!--END OF NAME INPUT--> 
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">EMAIL</div>
+                    </div>
+                <input type="text" name="email" class="form-control" id="inputEmail4" placeholder="EMAIL"  required>
+              </div>
+              </div> <!--END OF NAME INPUT-->         
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Date of birth</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">DOB</div>
+                  </div>
+              <input type="date" name="date_of_birth" class="form-control" id="inputEmail4" placeholder="Enter DOB"  required>
+            </div>
+               
+              </div> <!--END OF NAME INPUT-->
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Birth Cert No.</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">BCN</div>
+                    </div>
+                <input type="text" name="birth_cert_no" class="form-control" id="inputEmail4" placeholder="BIRTH CERT NO"  required>
+              </div>
+              </div> <!--END OF NAME INPUT--> 
+          
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">County of Birth</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">COB</div>
+                </div>
+            <input type="text" name="country" class="form-control" id="inputEmail4" placeholder="COUNTY OF BIRTH"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Marital Status</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">MST</div>
+                </div>
+            <input type="text" name="marital_status" class="form-control" id="inputEmail4" placeholder="Enter marital"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Home County</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="home_county" class="form-control" id="inputEmail4" placeholder="HOME COUNTY"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sub County</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sub_county" class="form-control" id="inputEmail4" placeholder="Sub County"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Location</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="location" class="form-control" id="inputEmail4" placeholder="Location"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sub Location</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sub_location" class="form-control" id="inputEmail4" placeholder="Sub location"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Village</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="village" class="form-control" id="inputEmail4" placeholder="VILLAGE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Estate</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="estate" class="form-control" id="inputEmail4" placeholder="ESTATE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Father's Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="name_of_father" class="form-control" id="inputEmail4" placeholder="FATHER'S NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Father's Occupation</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="occupation_of_father" class="form-control" id="inputEmail4" placeholder="OCCUPATION"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Father's Tel</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="father_tel" class="form-control" id="inputEmail4" placeholder="TEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF FATHER-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Mother's Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="name_of_mother" class="form-control" id="inputEmail4" placeholder="MOTHER NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Mother's Occupation</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="occupation_of_mother" class="form-control" id="inputEmail4" placeholder="MOM OCCUPATION" required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Mother's Tel</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="mother_tel" class="form-control" id="inputEmail4" placeholder="TEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF FATHER-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Guardian Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="name_of_guardian" class="form-control" id="inputEmail4" placeholder="GUARDIAN NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Guardian Occupation</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="occupation_of_guardian" class="form-control" id="inputEmail4" placeholder="GUARDIAN OCCUPATION" required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Guardian Tel</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="guardian_tel" class="form-control" id="inputEmail4" placeholder="TEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF FATHER-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sponsors's Name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="name_of_sponsor" class="form-control" id="inputEmail4" placeholder="SPONSOR NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sponsors's Tel</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sponsor_tel" class="form-control" id="inputEmail4" placeholder="SPONSOR TEL" required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sponsor's Address</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sponsor_address" class="form-control" id="inputEmail4" placeholder="SPONSOR ADDRESS"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF FATHER-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KRA Pin NO</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kra_pin" class="form-control" id="inputEmail4" placeholder="KRA PIN"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Huduma Number</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="huduma_num" class="form-control" id="inputEmail4" placeholder="HUDUMA NO."  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Orphan Status</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="orphan_status" class="form-control" id="inputEmail4" placeholder="ORPHAN STATUS"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF ORPHAN STATUS-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling1 name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling1_name" class="form-control" id="inputEmail4" placeholder="NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling1 school</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling1_school" class="form-control" id="inputEmail4" placeholder="SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling1 level</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling1_level" class="form-control" id="inputEmail4" placeholder="LEVEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF SIBLING1-->
+
+        <!--START OF SIBLING2-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling2 name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling2_name" class="form-control" id="inputEmail4" placeholder="NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling2 school</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling2_school" class="form-control" id="inputEmail4" placeholder="SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling2 level</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling2_level" class="form-control" id="inputEmail4" placeholder="LEVEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF SIBLING2-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling3 name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling3_name" class="form-control" id="inputEmail4" placeholder="NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling3 school</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling3_school" class="form-control" id="inputEmail4" placeholder="SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling3 level</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling3_level" class="form-control" id="inputEmail4" placeholder="LEVEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF SIBLING3-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling4 name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling4_name" class="form-control" id="inputEmail4" placeholder="NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling4 school</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling4_school" class="form-control" id="inputEmail4" placeholder="SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling4 level</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling4_level" class="form-control" id="inputEmail4" placeholder="LEVEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF SIBLING4-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling5 name</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling5_name" class="form-control" id="inputEmail4" placeholder="NAME"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling5 school</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling5_school" class="form-control" id="inputEmail4" placeholder="SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Sibling5 level</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="sibling5_level" class="form-control" id="inputEmail4" placeholder="LEVEL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div><!--END OF SIBLING5-->
+
+        <!--START OF SIBLING6-->
+        <div class="form-row">
+          <!--div class="form-group col-md-4">
+            <label for="inputEmail4">Have you been a beneficiary of any bursary</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="beneficiary_status" class="form-control" id="inputEmail4" placeholder="STATUS"  required>
+          </div>
+          </div--> <!--END OF NAME INPUT-->
+
+
+        </div><!--END OF BENEFICIARY-->
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Have you been a beneficiary of any bursary</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="beneficiary_status" class="form-control" id="inputEmail4" placeholder="YES/NO"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Do you suffer from any chronic disease</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="chronic_suffering_choice" class="form-control" id="inputEmail4" placeholder="YES/NO"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">If yes,Please explain</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="chronic_suffering_exp" class="form-control" id="inputEmail4" placeholder="EXPLAIN"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div><!--END OF BENEFICIARY-->
+
+        <!--ALLERGIC CONDITIONS-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Are you allergic to any food</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="food_allergy" class="form-control" id="inputEmail4" placeholder="YES/NO"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">If yes,Please explain</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="food_allergy_exp" class="form-control" id="inputEmail4" placeholder="EXPLAIN"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Co curricular activity 1</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">ACT1</div>
+                </div>
+            <input type="text" name="co_curricula_1" class="form-control" id="inputEmail4" placeholder="ACTIVITY1"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Co-curricular activity 2</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">ACT2</div>
+                </div>
+            <input type="text" name="co_curricula_2" class="form-control" id="inputEmail4" placeholder="ACTIVITY2"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">State whether Boarder or Day Scholar</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">B/D</div>
+                </div>
+            <input type="text" name="staying_preference" class="form-control" id="inputEmail4" placeholder="BORDER/DAY"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Course applied for</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="course_applying" class="form-control" id="inputEmail4" placeholder="COURSE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+
+        </div>
+
+        <div class="form-row">
+
+          
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Primary School studied</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="primary_school" class="form-control" id="inputEmail4" placeholder="PRIMARY"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCPE Index</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcpe_index" class="form-control" id="inputEmail4" placeholder="KCPE INDEX"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCPE Year</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcpe_year" class="form-control" id="inputEmail4" placeholder="KCPE YEAR"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Secondary School Studied</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="secondary_school" class="form-control" id="inputEmail4" placeholder="SECONDARY SCHOOL"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE Index</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_index" class="form-control" id="inputEmail4" placeholder="KCSE INDEX"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE Year</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_year" class="form-control" id="inputEmail4" placeholder="KCSE YEAR"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Previous Institution</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="previous_institution" class="form-control" id="inputEmail4" placeholder="INSTITUTION"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Previous Institution Index no.</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="previous_institution_index" class="form-control" id="inputEmail4" placeholder="INSTITUTION INDEX"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">TVET Exam Year</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="tvet_exam_year" class="form-control" id="inputEmail4" placeholder="TVET EXAM"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Subject1</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_1" class="form-control" id="inputEmail4" placeholder="SUBJECT"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_1_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject2</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_2" class="form-control" id="inputEmail4" placeholder="SUBJECT2"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_2_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject3</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_3" class="form-control" id="inputEmail4" placeholder="SUBJECT3"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_3_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject4</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_4" class="form-control" id="inputEmail4" placeholder="SUBJECT4"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_4_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject5</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_5" class="form-control" id="inputEmail4" placeholder="SUBJECT5"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_5_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject6</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_6" class="form-control" id="inputEmail4" placeholder="SUBJECT6"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_6_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject7</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_7" class="form-control" id="inputEmail4" placeholder="SUBJECT7"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_7_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+
+        <div class="form-row">
+
+          
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">KCSE/Craft Sbuject8</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_8" class="form-control" id="inputEmail4" placeholder="SUBJECT8"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_subject_8_grade" class="form-control" id="inputEmail4" placeholder="GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Aggregate/Mean Grade</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+            <input type="text" name="kcse_meangrade" class="form-control" id="inputEmail4" placeholder="MEAN GRADE"  required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Upload Passport photo</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">JPG</div>
+                </div>
+            <input type="file" name="image" class="form-control-file" id="inputEmail4" placeholder="UPLOAD PHOTO" accept="image/*" required>
+          </div>
+          </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Upload Resultslip</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">PDF</div>
+                    </div>
+                <input type="file" name="resultslip" class="form-control-file" id="inputEmail4" placeholder="UPLOAD RESULTSLIP" accept=".pdf" required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Upload Leaving Certificate</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Leaving cert</div>
+                    </div>
+                <input type="file" name="leaving_certificate" class="form-control-file" id="inputEmail4" placeholder="UPLOAD LEAVING CERT" accept=".pdf" required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Identification Card</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">ID CARD</div>
+                    </div>
+                <input type="file" name="id_card" class="form-control-file" id="inputEmail4" placeholder="UPLOAD SCANNED ID" accept=".pdf" required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Birth Cert</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Birth Cert</div>
+                    </div>
+                <input type="file" name="birth_cert" class="form-control-file" id="inputEmail4" placeholder="UPLOAD SCANNED Birth cert" accept=".pdf" required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">Medical Certificate</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Medical Cert</div>
+                    </div>
+                <input type="file" name="medical_cert" class="form-control-file" id="inputEmail4" placeholder="UPLOAD SCANNED Medical cert" accept=".pdf" required>
+              </div>
+              </div> <!--END OF NAME INPUT-->
+
+        </div>
+
+
+      
+    
+       
+      
+        <button type="submit" class="btn btn-primary">Submit your application</button>
+      </form>
+
+    <!--END OF FORM 2-->
+
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

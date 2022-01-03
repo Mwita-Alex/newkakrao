@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+           
+          </div>
+          <div class="col-md-6">
+              <strong><h3>New Student's Registration Form</h3></strong>
+        
+          </div>
+          <div class="col">
+          </div>
+        </div>
+
+        <!--SECTION A STARTS HERE-->
+
+        <div class="row">
+            <div class="col">
+             
+            </div>
+            <div class="col-md-6">
+                <strong><h5 class="text-success">SECTIONA : GENERAL INFORMATION OF THE NEW STUDENT</h5></strong>
+                <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Admission</th>
+                        <th scope="col">Sex</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">{{student.first_name}} {{student.middle_name}} {{student.last_name}}</td>
+                        <td>{{student.student_gender}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+
+                  <!--END OF TABLE 1-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Address</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Town</th>
+                        <th scope="col">Tel No.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.student_address}}</td>
+                        <td>{{student.code}}</td>
+                        <td>{{student.town}}</td>
+                        <td>{{student.tel}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+
+                  <!--END OF TABLE 2-->
+
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID NO.</th>
+                        <th scope="col">Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.idnumber}}</td>
+                        <td>{{student.email}}</td>
+                    
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col">
+                            <h5 class="text-uppercase text-success text-align-center">uploaded contents will be shown here</h5>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+                 
+                
+          
+            </div>
+            <div class="col">
+            </div>
+          </div>
+
+        <!--SECTION A ENDS HERE-->
+       
+      </div>
+
+<!--
+<h1>Welcome to individual student details</h1>
+{% include 'pages/messages.html' %}
+<h3>{{student.first_name}}{{student.last_name}}</h3>
+<p>Email ID : {{student.email_id}}</p>
+<p>Gender : {{student.student_gender}}</p>
+<p>kcpe_index : {{student.kcpe_index}}</p>
+<p>kcse_index : {{student.kcse_index}}</p>
+<p>phone_num : {{student.phone_num}}</p>
+<p>student_level applying : {{student.student_level}}</p>
+<p>student_image : <img src="{{student.student_image}}"></p>
+<p>Address : {{student.student_address}}</p>
+<p>Course:
+    {% for course in student.student_course.all %}
+        <em>{{course.name}}</em>
+    {% endfor %}
+</p>
+<p>D.O.B : {{student.date_of_birth}}</p>
+<p>Secondary Grade : {{student.secondary_grade}}</p-->
+
+</body>
+
+
+</html>
