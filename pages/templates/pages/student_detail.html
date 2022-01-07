@@ -85,16 +85,569 @@
                      
                     </tbody>
                   </table>
-                  <div class="container-fluid">
-                      <div class="row">
-                          <div class="col">
-                            <h5 class="text-uppercase text-success text-align-center">uploaded contents will be shown here</h5>
+                  <!-- END OF TABLE 3-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">DATE OF BIRTH</th>
+                        <th scope="col">BIRTH CERT. ENTRY NO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.date_of_birth}}</td>
+                        <td>{{student.birth_cert_no}}</td>
+                    
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 4-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">COUNTY OF BIRTH</th>
+                        <th scope="col">MARITAL STATUS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.country}}</td>
+                        <td>{{student.marital_status}}</td>
+                    
+                      </tr>
+                     
+                    </tbody>
+                  </table>
 
-                          </div>
+                  <!-- END OF TABLE 5-->
+
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">HOME COUNTY</th>
+                        <th scope="col">SUB-COUNTY</th>
+                        <th scope="col">LOCATION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.home_county}}</td>
+                        <td>{{student.sub_county}}</td>
+                        <td>{{student.location}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 6-->
+
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">SUB LOCATION</th>
+                        <th scope="col">VILLAGE</th>
+                        <th scope="col">ESTATE</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.sub_location}}</td>
+                        <td>{{student.village}}</td>
+                        <td>{{student.estate}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 7-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">FATHER'S NAME</th>
+                        <th scope="col">OCCUPATION</th>
+                        <th scope="col">TEL NO.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.name_of_father}}</td>
+                        <td>{{student.occupation_of_father}}</td>
+                        <td>{{student.father_tel}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 8-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">MOTHER'S NAME</th>
+                        <th scope="col">OCCUPATION</th>
+                        <th scope="col">TEL NO.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.name_of_mother}}</td>
+                        <td>{{student.occupation_of_mother}}</td>
+                        <td>{{student.mother_tel}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 9-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">GUARDIAN'S NAME</th>
+                        <th scope="col">OCCUPATION</th>
+                        <th scope="col">TEL NO.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.name_of_guardian}}</td>
+                        <td>{{student.occupation_of_guardian}}</td>
+                        <td>{{student.guardian_tel}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 10-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">SPONSOR'S NAME</th>
+                        <th scope="col">TEL NO</th>
+                        <th scope="col">ADDRESS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.name_of_sponsor}}</td>
+                        <td>{{student.sponsor_tel}}</td>
+                        <td>{{student.sponsor_address}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 11-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">KRA PIN NO</th>
+                        <th colspan="2" scope="col">HUDUMA NO.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.kra_pin}}</td>
+                        <td colspan="2">{{student.huduma_num}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--END OF TABLE 12-->
+                  <table class="table table-bordered table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">ARE YOU PARTIALLY/ TOTALLY ORPHANED/ NEITHER OF THE TWO</th>
+                
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{student.orphan_status}}</td>
+                       
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                          <h5 class="text-uppercase text-success text-align-center">SIBLINGS IN LEARNING INSTITUTIONS</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--SIBLING 1 START-->
+                <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">NAME</th>
+                      <th scope="col">SCHOOL/ INSTITUTION</th>
+                      <th scope="col">LEVEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{student.sibling1_name}}</td>
+                      <td>{{student.sibling1_school}}</td>
+                      <td>{{student.sibling1_level}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{student.sibling2_name}}</td>
+                      <td>{{student.sibling2_school}}</td>
+                      <td>{{student.sibling2_level}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{student.sibling3_name}}</td>
+                      <td>{{student.sibling3_school}}</td>
+                      <td>{{student.sibling3_level}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{student.sibling4_name}}</td>
+                      <td>{{student.sibling4_school}}</td>
+                      <td>{{student.sibling4_level}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{student.sibling5_name}}</td>
+                      <td>{{student.sibling5_school}}</td>
+                      <td>{{student.sibling5_level}}</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+
+                <!--SIBLINGS ENDS-->
+
+                <!--BURSARY-->
+                <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">HAVE YOU BEEN BENEFICICARY OF ANY BURSARY SCHEME?</th>
+              
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{student.beneficiary_status}}</td>
+                     
+                    </tr>
+                   
+                  </tbody>
+                </table>
+                <!--DISEASE STATUS-->
+              
+
+                <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">DO YOU SUFFER FROM ANY CHRONIC DISEASE?</th>
+                      <th   colspan="2"scope="col">EXPLANATION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{student.chronic_suffering_choice}}</td>
+                      <td  colspan="2">{{student.chronic_suffering_exp}}</td>
+                  
+                    </tr>
+                   
+                  </tbody>
+                </table>
+
+                <!--ALLERGY-->
+
+                <table class="table table-bordered table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">ARE YOU ALLLERGIC TO ANY FOOD?</th>
+                      <th   colspan="2"scope="col">EXPLANATION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{student.food_allergy}}</td>
+                      <td  colspan="2">{{student.food_allergy_exp}}</td>
+                  
+                    </tr>
+                   
+                  </tbody>
+                </table>
+                <div class="container-fluid">
+                  <div class="row">
+                      <div class="col">
+                        <h5 class="text-uppercase text-success text-align-center">List of co-curricular activities</h5>
 
                       </div>
 
                   </div>
+
+              </div>
+              <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">CO-CURRICULAR 1</th>
+                    <th scope="col">CO-CURRICULAR 2</th>
+                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{student.co_curricula_1}}</td>
+                    <td>{{student.co_curricula_2}}</td>
+                    
+                  </tr>
+                 
+                </tbody>
+              </table>
+              <!--BOARDING STATUS-->
+              <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">STATE WHETHER BOARDER OR DAY SCHOLAR</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{student.staying_preference}}</td>
+                  
+                
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                      <h5 class="text-uppercase text-success text-align-center">ACADEMIC DETAILS</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <table class="table table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">COURSE APPLIED FOR</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{student.course_applying}}</td>
+                 
+                </tr>
+               
+              </tbody>
+            </table>
+            <table class="table table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">PRIMARY SCHOOL</th>
+                  <th scope="col">KCPE INDEX</th>
+                  <th scope="col">KCPE YEAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{student.primary_school}}</td>
+                  <td>{{student.kcpe_index}}</td>
+                  <td>{{student.kcpe_year}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <table class="table table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">SECONDARY SCHOOL</th>
+                  <th scope="col">KCSE INDEX</th>
+                  <th scope="col">KCSE YEAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{student.secondary_school}}</td>
+                  <td>{{student.kcse_index}}</td>
+                  <td>{{student.kcse_year}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <table class="table table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">PREVIOUS INSTITUTION</th>
+                  <th scope="col">INDEX NO</th>
+                  <th scope="col">TVET EXAM YEAR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{student.previous_institution}}</td>
+                  <td>{{student.previous_institution_index}}</td>
+                  <td>{{student.tvet_exam_year}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <table class="table table-bordered table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">KCSE/CRAFT SUBJECTS</th>
+                  <th scope="col">GRADE</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{student.kcse_subject_1}}</td>
+                  <td>{{student.kcse_subject_1_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_2}}</td>
+                  <td>{{student.kcse_subject_2_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_3}}</td>
+                  <td>{{student.kcse_subject_3_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_4}}</td>
+                  <td>{{student.kcse_subject_4_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_5}}</td>
+                  <td>{{student.kcse_subject_5_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_6}}</td>
+                  <td>{{student.kcse_subject_6_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_7}}</td>
+                  <td>{{student.kcse_subject_7_grade}}</td>
+                </tr>
+                <tr>
+                  <td>{{student.kcse_subject_8}}</td>
+                  <td>{{student.kcse_subject_8_grade}}</td>
+                </tr>
+               
+              </tbody>
+            </table>
+            
+
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                    <h5 class="text-uppercase text-success text-align-center">uploaded contents will be shown here</h5>
+
+                  </div>
+
+              </div>
+
+          </div>
+        
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ student.image.url }}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">{{student.first_name}} passport photo</h5>
+                      
+                    </div>
+                  </div>
+                 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <!--embed src="{{ student.resultslip.url }}" type="application/pdf" width="100%" height="100px" /-->
+                  <a href="{{ student.resultslip.url }}" width="100%" height="500px">
+                    <p>Download {{student.first_name}}  Resultslip</p></a>
+           
+                </div>
+               
+
+              </div>
+
+          </div>
+
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <!--embed src="{{ student.resultslip.url }}" type="application/pdf" width="100%" height="100px" /-->
+                <a href="{{ student.leaving_certificate.url }}" width="100%" height="500px">
+                  <p>Download {{student.first_name}}  Leaving Certificate</p></a>
+         
+              </div>
+             
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <!--embed src="{{ student.resultslip.url }}" type="application/pdf" width="100%" height="100px" /-->
+              <a href="{{ student.id_card.url }}" width="100%" height="500px">
+                <p>Download {{student.first_name}}  ID CARD</p></a>
+       
+            </div>
+           
+
+          </div>
+
+      </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <!--embed src="{{ student.resultslip.url }}" type="application/pdf" width="100%" height="100px" /-->
+            <a href="{{ student.birth_cert.url }}" width="100%" height="500px">
+              <p>Download {{student.first_name}}  BIRTH CERTIFICATE</p></a>
+     
+          </div>
+         
+
+        </div>
+
+    </div>
+
+</div>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <!--embed src="{{ student.resultslip.url }}" type="application/pdf" width="100%" height="100px" /-->
+          <a href="{{ student.medical_cert.url }}" width="100%" height="500px">
+            <p>Download {{student.first_name}}  MEDICAL CERTIFICATE</p></a>
+   
+        </div>
+       
+
+      </div>
+
+  </div>
+
+</div>
+                
+
+
+
+
+
 
                  
                 

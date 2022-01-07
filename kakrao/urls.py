@@ -22,7 +22,7 @@ from pages import views
 urlpatterns = [
     path('', include('pages.urls')),
     path('admin/', admin.site.urls),
-    path('dashboard/', views.dashboard, name='home'),
+    path('dashboard/', views.dashboard, name='dashboard'),
     path('student_detail/<int:student_id>', views.student_detail, name = 'student_detail'),
     path('register/', views.kakform, name='kakform'),
 ]
